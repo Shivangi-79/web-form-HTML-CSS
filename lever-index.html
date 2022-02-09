@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-32x32.png">
+    <link rel="manifest" href="./images/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/leaver-css.css">
+    <title>Leaver-Form-HPC-Sales-Ltd</title>
+</head>
+<body>
+    
+        <section class="container">
+            <div class="img">
+                <img src="./images/HPC_Sales_Black.jpg" alt="HPC Sales">
+            </div>
+            <form class="" action="mailto:shivangi@hpc-group.ie?subject=Employee-Leaver-Form" method="post" enctype="text/plain">
+                <fieldset> 
+                <legend>Leaver Form</legend>
+                <label for="employeeName">Employee Name: </label>
+                <input type="text" id="employeeName" name="employeeName" required>
+                <br>
+                <label for="employeeBranch">Branch: </label>
+                    <select name="Employee branch" id="employeeBranch" required>
+                    <option value="" disabled selected hidden class="choose">--Please choose a Branch--</option>
+                    <option value="TJ O'Mahony Arklow">TJ O'Mahony Arklow</option>
+                    <option value="TJ O'Mahony Ardee">TJ O'Mahony Ardee</option>
+                    <option value="TJ O'Mahony Ballymount">TJ O'Mahony Ballymount</option>
+                    <option value="TJ O'Mahony Cahir">TJ O'Mahony Cahir</option>
+                    <option value="TJ O'Mahony Glasnevin">TJ O'Mahony Glasnevin</option>
+                    <option value="TJ O'Mahony Gort">TJ O'Mahony Gort</option>
+                    <option value="TJ O'Mahony Kilshane">TJ O'Mahony Kilshane</option>
+                    <option value="TJ O'Mahony Oranmore">TJ O'Mahony Oranmore</option>
+                    <option value="TJ O'Mahony Navan">TJ O'Mahony Navan</option>
+                    <option value="TJ O'Mahony Prosperous">TJ O'Mahony Prosperous</option>
+                    <option value="TJ O'Mahony T&PP">TJ O'Mahony T&PP</option>
+                    <option value="Roofing & Insulation">Roofing & Insulation</option>
+                    <option value="PH Ross Cabra-Showroom">PH Ross Cabra-howroom</option>
+                    <option value="PH Ross Cabra-Warehouse">PH Ross Cabra-Warehouse</option>
+                    <option value="PH Ross Bluebell">PH Ross Bluebell</option>
+                    <option value="PH Ross Naas">PH Ross Naas</option>
+                    <option value="C&D Providers">C&D Providers</option>
+                </select>
+                <br>
+                <label for="EmployeeDepartment">Department: </label>
+                <select name="EmployeeDepartment" id="EmployeeDepartment" required>
+                    <option value="" selected disabled hidden class="choose">--Please choose a Departmemt--</option>
+                    <option value="Sales">Sales</option>
+                    <option value="Yard">Yard</option>
+                    <option value="Driver">Driver</option>
+                    <option value="Group">Group</option>
+                </select>
+                <br>
+                <label for="leaveDate">Leave Date</label>
+                <input type="date" name="leaveDate" id="leaveDate" required>
+                <br>
+                <hr>
+                
+                <p>Employee Sales system Number: </p>
+                <div class="checks">
+                <label for="salesNumber">Yes</label>
+                <input type="radio" name="salesNumber" id="salesNumber" value="Yes">
+                <label for="salesNumber">No</label>
+                <input type="radio" name="salesNumber" id="salesNumber" value="No">
+                </div>
+                <p>Employee Work Email: </p>
+                <div class="checks">
+                <label for="workEmail">Yes</label>
+                <input type="radio" name="workEmail" id="workEmail" value="Yes">
+                <label for="workEmail">No</label>
+                <input type="radio" name="workEmail" id="workEmail" value="No">
+                </div>
+                <p>Employee Login ERP System: </p>
+                <div class="checks">
+                <label for="ERP-system">Yes</label>
+                <input type="radio" name="ERP-system" id="ERP-system" value="Yes">
+                <label for="ERP-system">No</label>
+                <input type="radio" name="ERP-system" id="ERP-system" value="No">
+                </div>
+                <p>Employee Laptop: </p>
+                <div class="checks">
+                <label for="Employee-Laptop">Yes</label>
+                <input type="radio" name="Employee-Laptop" id="Employee-Laptop" value="Yes">
+                <label for="Employee-Laptop">No</label>
+                <input type="radio" name="Employee-Laptop" id="Employee-Laptop" value="No">
+                </div>
+                <p>Employee Mobile Phone: </p>
+                <div class="checks">
+                <label for="Employee-Mobile">Yes</label>
+                <input type="radio" name="Employee-Mobile" id="Employee-Mobile" value="Yes">
+                <label for="Employee-Mobile">No</label>
+                <input type="radio" name="Employee-Mobile" id="Employee-Mobile" value="No">
+                </div>
+                <p>Employee Company Vehical: </p>
+                <div class="checks">
+                <label for="Employee-Company-Vehical">Yes</label>
+                <input type="radio" name="Employee-Company-Vehical" id="Employee-Company-Vehical" value="Yes">
+                <label for="Employee-Company-Vehical">No</label>
+                <input type="radio" name="Employee-Company-Vehical" id="Employee-Company-Vehical" value="No">
+                </div>
+                <br>
+                <br>
+                <button type="submit" class="btn">Submit</button>
+            </fieldset>
+            </form>
+        
+        </section>
+    
+        
+        </div>
+        <div class="footer">
+            <a class="footer-link" href="https://www.instagram.com/tj_omahony/" target="_blank">LinkedIn</a>
+            <a class="footer-link" href="https://www.facebook.com/tjomahonyIRL" target="_blank">Facebook</a>
+            <a class="footer-link" href="https://tjomahony.ie/" target="_blank">Website</a>
+            <p class="copyright">© Copyright 2022 Shivangi Raval 🤖</p>
+        </div>
+    </body>
+</html>

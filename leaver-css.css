@@ -1,0 +1,334 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: "Montserrat";
+    background-color: #EDFFEC;
+}
+
+.container {
+    position: relative;
+    margin: 2em;
+}
+
+/* img */
+
+img {
+    width: 10em;
+    position: absolute;
+    right: 1.2em;
+    top: 0;
+    
+}
+
+fieldset {
+    margin: 2em 0;
+    padding: 1em 2em;
+    border: solid 1px #11999E;
+    border-radius: 6px;
+    min-width: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+legend {
+    font-size: 2em;
+    padding: 0.25em;
+    color: rgb(58, 12, 12);
+}
+
+hr {
+    color: #586161;
+    border: dotted 5px;
+    border-bottom: none;
+    width: 60px;
+    margin-top: 40px;
+    margin: 10px auto;
+}
+
+p {
+    display: inline;
+    margin-top: 5px;
+    
+}
+
+
+/* Option */
+
+option {
+    font-family: "Montserrat";
+    font-size: 12px;
+    font-style: normal;
+    color: black;
+}
+
+select:required:invalid {
+    color: gray;
+    font-style: oblique;
+    
+  }
+
+.choose {
+    color: #999;
+}
+
+
+/* date */
+
+input[type="date"] {
+    color: gray;
+    font-family: "Montserrat";
+    font-size: 12px;
+    font-weight: 500;
+}
+
+
+/* labels */
+label {
+    margin-top: 0
+}
+
+label:first-of-type {
+    margin-top: 0;
+}
+
+.checks label {
+    margin-top: 0px;
+    
+    
+}
+
+.checks input {
+    margin: 0px;
+    /*margin-bottom: 1.30em;;*/
+   
+    
+}
+  
+/* input and textarea*/
+
+input, select {
+    padding: 0.5em;
+    border: solid 1px #999;
+}
+
+
+/* radio buttin */
+
+.checks {
+    display: inline-block;
+    margin-bottom: 1em;
+}
+
+input[type="radio"] {
+    
+    padding-top: 0;
+    margin-top: 0;
+}
+
+input[type="radio"] {
+    margin-left: 1.25em;
+    margin-right: 1.25em;
+}
+
+input[type="radio"]:last-of-type {
+    margin-left: 0;
+}
+
+input[type="radio"]:first-of-type {
+    margin-left: 0;
+}
+
+
+.checks p {
+    margin-bottom: 0;
+}
+
+/* footer */
+.copyright {
+    color: #EAF6F6;
+    font-size: 0.90rem;
+    text-align: center;
+    margin-top: 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+a {
+    color: #11999E;
+    font-family: 'Montserrat', sans-serif;
+    margin: 5px;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 0;
+    
+}
+
+a:hover {
+    color: #627777;
+}
+
+.footer p {
+    color: #11999E;
+    font-weight: 800;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+/* submit button*/
+
+.btn {
+    background: #11999E;
+    background-image: -webkit-linear-gradient(top, #11999E, #11999E);
+    background-image: -moz-linear-gradient(top, #11999E, #11999E);
+    background-image: -ms-linear-gradient(top, #11999E, #11999E);
+    background-image: -o-linear-gradient(top, #11999E, #11999E);
+    background-image: linear-gradient(to bottom, #11999E, #11999E);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 10px;
+    text-shadow: 0px 1px 13px #b8d6d0;
+    font-family: "Montserrat";
+    color: #f3dcf3;
+    font-size: 17px;
+    padding: 5px 5px 5px 10px;
+    border: solid #2d81b5 0px;
+    text-decoration: none;
+    
+  }
+  
+  .btn:hover {
+    background: #7a858c;
+    background-image: -webkit-linear-gradient(top, #7a858c, #8898a3);
+    background-image: -moz-linear-gradient(top, #7a858c, #8898a3);
+    background-image: -ms-linear-gradient(top, #7a858c, #8898a3);
+    background-image: -o-linear-gradient(top, #7a858c, #8898a3);
+    background-image: linear-gradient(to bottom, #7a858c, #8898a3);
+    text-decoration: none;
+  }
+
+
+
+/* media query  - large screen rule*/
+@media screen and (min-width: 500%) {
+    legend {
+        font-size: 1.75em;
+    }
+
+    fieldset {
+        width: 40%;
+        min-width: 320px;
+    }
+
+    .checks label {
+        display: inline-block;
+        padding-top: .5em;
+        margin-top: 0;
+        margin-right: .5em;
+    }
+}
+
+
+/*
+section {
+    display: flex;
+    height: 80%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 15px;
+    box-shadow: 0px 0px 20px #00000010;
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    width: 90%;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+
+
+.form-group input, .form-group select {
+    width: 30%;
+    padding: 5px;
+    font-size: 15px;
+    border: 1px solid rgba(92, 68, 68, 0.199);
+    margin-top: 5px;
+}
+#employeeBranch, #EmployeeDepartment {
+    margin-top: 5px;
+    width: 45%;
+
+button[type="submit"] {
+    width: 40%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 8px;
+    font-family: "Montserrat";
+    color: rgb(27, 166, 247);
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s ease background-color;
+  }
+  button[type="submit"]:hover {
+    background-color: rgb(214, 226, 236);
+  }
+
+  #status {
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 8px;
+  }
+  #status.success {
+    background-color: rgb(211, 250, 153);
+    animation: status 4s ease forwards;
+  }
+  #status.error {
+    background-color: rgb(250, 129, 92);
+    color: white;
+    animation: status 4s ease forwards;
+  }
+  @keyframes status {
+    0% {
+      opacity: 1;
+      pointer-events: all;
+    }
+    90% {
+      opacity: 1;
+      pointer-events: all;
+    }
+    100% {
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
+  */
