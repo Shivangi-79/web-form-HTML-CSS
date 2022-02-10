@@ -8,6 +8,7 @@
 body {
     font-family: "Montserrat";
     background-color: #EDFFEC;
+    font-size: 15px;
 }
 
 .container {
@@ -56,8 +57,7 @@ hr {
 
 p {
     display: inline;
-    margin-top: 5px;
-    
+    margin: 0.5em;
 }
 
 
@@ -102,15 +102,11 @@ label:first-of-type {
 
 .checks label {
     margin-top: 0px;
-    
-    
 }
 
 .checks input {
     margin: 0px;
     /*margin-bottom: 1.30em;;*/
-   
-    
 }
   
 /* input and textarea*/
@@ -124,40 +120,65 @@ input, select {
 /* radio buttin */
 
 .checks {
-    display: inline-block;
-    margin-bottom: 1em;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    
+}
+
+td {
+    padding: 0.5em;
+    
+}
+
+.one-cell, .two-cell, .three-cell, .four-cell, .fifth-cell, .sixth-cell, .seventh-cell {
+    width: 10em;
+}
+
+.one, .two, .three, .four, .five, .six, .seven {
+    margin: 0;
+
+   
+}
+
+.one p, .two p, .three p, .four p, .five p, .six p, .seven p {
+    margin-bottom: 2em;
+    padding-left: 0;
+    padding-bottom: 0.5em;
+    
 }
 
 input[type="radio"] {
-    
     padding-top: 0;
     margin-top: 0;
-}
-
-input[type="radio"] {
     margin-left: 1.25em;
     margin-right: 1.25em;
 }
 
+
+
 input[type="radio"]:last-of-type {
-    margin-left: 0;
+    margin-left: 0.3em;
+
 }
 
 input[type="radio"]:first-of-type {
-    margin-left: 0;
+    margin-left: 0.3em;
 }
 
 
 .checks p {
-    margin-bottom: 0;
+    margin-left: 0;
+    
 }
 
 /* footer */
 .copyright {
     color: #EAF6F6;
     font-size: 0.90rem;
-    text-align: center;
+    text-align: right;
     margin-top: 0;
+    margin-right: 0;
 }
 
 .footer {
@@ -206,7 +227,6 @@ a:hover {
     padding: 5px 5px 5px 10px;
     border: solid #2d81b5 0px;
     text-decoration: none;
-    
   }
   
   .btn:hover {
@@ -219,10 +239,8 @@ a:hover {
     text-decoration: none;
   }
 
-
-
 /* media query  - large screen rule*/
-@media screen and (min-width: 500%) {
+@media screen and (min-width: 600%) {
     legend {
         font-size: 1.75em;
     }
@@ -238,97 +256,6 @@ a:hover {
         margin-top: 0;
         margin-right: .5em;
     }
+
+   
 }
-
-
-/*
-section {
-    display: flex;
-    height: 80%;
-    width: 100%;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
-    
-}
-
-.container {
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 15px;
-    box-shadow: 0px 0px 20px #00000010;
-    background-color: white;
-    border-radius: 8px;
-    margin-bottom: 20px;
-}
-
-.form-group {
-    width: 90%;
-    margin-top: 20px;
-    font-size: 18px;
-}
-
-
-
-.form-group input, .form-group select {
-    width: 30%;
-    padding: 5px;
-    font-size: 15px;
-    border: 1px solid rgba(92, 68, 68, 0.199);
-    margin-top: 5px;
-}
-#employeeBranch, #EmployeeDepartment {
-    margin-top: 5px;
-    width: 45%;
-
-button[type="submit"] {
-    width: 40%;
-    border: none;
-    outline: none;
-    padding: 10px;
-    font-size: 15px;
-    border-radius: 8px;
-    font-family: "Montserrat";
-    color: rgb(27, 166, 247);
-    text-align: center;
-    cursor: pointer;
-    margin-top: 10px;
-    transition: 0.3s ease background-color;
-  }
-  button[type="submit"]:hover {
-    background-color: rgb(214, 226, 236);
-  }
-
-  #status {
-    width: 90%;
-    max-width: 500px;
-    text-align: center;
-    padding: 10px;
-    margin: 0 auto;
-    border-radius: 8px;
-  }
-  #status.success {
-    background-color: rgb(211, 250, 153);
-    animation: status 4s ease forwards;
-  }
-  #status.error {
-    background-color: rgb(250, 129, 92);
-    color: white;
-    animation: status 4s ease forwards;
-  }
-  @keyframes status {
-    0% {
-      opacity: 1;
-      pointer-events: all;
-    }
-    90% {
-      opacity: 1;
-      pointer-events: all;
-    }
-    100% {
-      opacity: 0;
-      pointer-events: none;
-    }
-  }
-  */
