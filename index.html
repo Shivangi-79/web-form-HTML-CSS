@@ -18,13 +18,13 @@
     
         <section class="container">
             <div class="img">
-                <img src="./images/HPC_Sales_Black.jpg" alt="HPC Sales">
+                <img src="HPC_Sales_Black.jpg" alt="HPC Sales">
             </div>
-            <form class="" action="mailto:shivangi@hpc-group.ie?subject=Employee-Leaver-Form" method="post" enctype="text/plain">
+            <form class="" action="mailto:shivangi@hpc-group.ie,?cc=sathish@hpc-group.ie,jomahony@hpc-group.ie&subject=Leaver%20-%20Form&body=Please%20see%20below%20Leaver%20Form%20%3A" method="post" enctype="text/plain">
                 <fieldset> 
                 <legend>Leaver Form</legend>
                 <label for="employeeName">Employee Name: </label>
-                <input type="text" id="employeeName" name="employeeName" required>
+                <input type="text" id="employeeName" name="employeeName" placeholder="Employee-Name" required>
                 <br>
                 <label for="employeeBranch">Branch: </label>
                     <select name="Employee branch" id="employeeBranch" required>
@@ -40,8 +40,10 @@
                     <option value="TJ O'Mahony Navan">TJ O'Mahony Navan</option>
                     <option value="TJ O'Mahony Prosperous">TJ O'Mahony Prosperous</option>
                     <option value="TJ O'Mahony T&PP">TJ O'Mahony T&PP</option>
+                    <option value="TJ O'Mahony Limerick">TJ O'Mahony Limerick</option>
+                    <option value="TJ O'Mahony Tullamore">TJ O'Mahony Tullamore</option>
                     <option value="Roofing & Insulation">Roofing & Insulation</option>
-                    <option value="PH Ross Cabra-Showroom">PH Ross Cabra-howroom</option>
+                    <option value="PH Ross Cabra-Showroom">PH Ross Cabra-showroom</option>
                     <option value="PH Ross Cabra-Warehouse">PH Ross Cabra-Warehouse</option>
                     <option value="PH Ross Bluebell">PH Ross Bluebell</option>
                     <option value="PH Ross Naas">PH Ross Naas</option>
@@ -57,62 +59,125 @@
                     <option value="Group">Group</option>
                 </select>
                 <br>
-                <label for="leaveDate">Leave Date</label>
+                <label for="leaveDate">Leave Date: </label>
                 <input type="date" name="leaveDate" id="leaveDate" required>
                 <br>
-                <hr>
-                
-                <p>Employee Sales system Number: </p>
+                <hr>    
                 <div class="checks">
+                <table> 
+                <!--first row-->
+                
+                <div class="one"> 
+                <tr> 
+                <td class="one-row">
+                <p>Employee Login ERP System (Remedy): </p>
+                </td>
+                <td class="one-cell">
                 <label for="salesNumber">Yes</label>
                 <input type="radio" name="salesNumber" id="salesNumber" value="Yes">
                 <label for="salesNumber">No</label>
                 <input type="radio" name="salesNumber" id="salesNumber" value="No">
+                </td>
+                </tr>
                 </div>
-                <p>Employee Work Email: </p>
-                <div class="checks">
-                <label for="workEmail">Yes</label>
+                
+                <!--second row-->
+                <div class="two"> 
+                <tr>
+                <td class="two-rwo">
+                <p>Employee SoftCo Account: </p> </td>
+                <td class="two-cell"><label for="workEmail">Yes</label>
                 <input type="radio" name="workEmail" id="workEmail" value="Yes">
                 <label for="workEmail">No</label>
                 <input type="radio" name="workEmail" id="workEmail" value="No">
+            	</td>
+                </tr>
                 </div>
-                <p>Employee Login ERP System: </p>
-                <div class="checks">
+
+                <!--third row-->
+                <div class="three">
+                <tr>
+                <td class="three-row">
+                <p>Employee Rapid Reporting (Account): </p>
+                </td>
+                <td class="three-cell">
                 <label for="ERP-system">Yes</label>
                 <input type="radio" name="ERP-system" id="ERP-system" value="Yes">
                 <label for="ERP-system">No</label>
                 <input type="radio" name="ERP-system" id="ERP-system" value="No">
+                </td>
+                </tr>
                 </div>
-                <p>Employee Laptop: </p>
-                <div class="checks">
+
+                <!--fourth row-->
+                <div class="four">
+                <tr>
+                <td class="four-row">
+                <p>Employee Work Email id: </p>
+                </td>
+                <td class="four-cell">
                 <label for="Employee-Laptop">Yes</label>
                 <input type="radio" name="Employee-Laptop" id="Employee-Laptop" value="Yes">
                 <label for="Employee-Laptop">No</label>
                 <input type="radio" name="Employee-Laptop" id="Employee-Laptop" value="No">
+                </td>
+                </tr>
                 </div>
-                <p>Employee Mobile Phone: </p>
-                <div class="checks">
+
+                <!--fifth rwo-->
+                <div class="five">
+                <tr>
+                <td class="fifth-row">
+                <p>Employee laptop: </p>
+                </td>
+                <td class="fifth-cell">
                 <label for="Employee-Mobile">Yes</label>
                 <input type="radio" name="Employee-Mobile" id="Employee-Mobile" value="Yes">
                 <label for="Employee-Mobile">No</label>
                 <input type="radio" name="Employee-Mobile" id="Employee-Mobile" value="No">
+                </td>
+                </tr>
                 </div>
-                <p>Employee Company Vehical: </p>
-                <div class="checks">
-                <label for="Employee-Company-Vehical">Yes</label>
-                <input type="radio" name="Employee-Company-Vehical" id="Employee-Company-Vehical" value="Yes">
-                <label for="Employee-Company-Vehical">No</label>
-                <input type="radio" name="Employee-Company-Vehical" id="Employee-Company-Vehical" value="No">
+
+                <!--sixth rwo-->
+                <div class="six">
+                <tr>
+                <td class="sixth-row">
+                <p>Employee Mobile Phone: </p>
+                </td>
+                <td class="sixth-cell">
+                <label for="Employee-Company-Vehicle">Yes</label>
+                <input type="radio" name="Employee-Company-Vehicle" id="Employee-Company-Vehicle" value="Yes">
+                <label for="Employee-Company-Vehicle">No</label>
+                <input type="radio" name="Employee-Company-Vehicle" id="Employee-Company-Vehicle" value="No">
+                </td>
+                </tr>
+                </div>
+
+                <!--seventh rwo-->
+                <div class="seven">
+                <tr>
+                <td class="seventh-row">
+                <p>Employee Company Vehicle: </p>
+                </td>
+                <td class="seventh-cell">
+                <label for="Employee-Company-Vehicle">Yes</label>
+                <input type="radio" name="Employee-Company-Vehicle" id="Employee-Company-Vehicle" value="Yes">
+                <label for="Employee-Company-Vehicle">No</label>
+                <input type="radio" name="Employee-Company-Vehicle" id="Employee-Company-Vehicle" value="No"> 
+                </td>
+                </tr> 
+                </div>
+                </table>
                 </div>
                 <br>
-                <br>
-                <button type="submit" class="btn">Submit</button>
+
+                <button type="submit" class="btn" onclick="greetMessage()">Submit</button>
+                <script src="./scripts/leaver-script.js"></script>
             </fieldset>
             </form>
         
         </section>
-    
-        
         </div>
         <div class="footer">
             <a class="footer-link" href="https://www.instagram.com/tj_omahony/" target="_blank">LinkedIn</a>
